@@ -7,3 +7,5 @@ if( isset($_SESSION['nome'])){
 }else{
     echo"<h1>Que pena, voce nao esta logado!!";
 }
+
+?>

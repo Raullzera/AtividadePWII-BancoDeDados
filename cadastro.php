@@ -1,3 +1,15 @@
+<?php
+require 'Aluno.class.php';
+
+$aluno = new Aluno();
+
+if(!$aluno){ 
+    echo "<h1>Banco indisponível. Tente mais tarde</h1>";
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,40 +23,40 @@
 </head>
 <body>
 
-    <form action="teste.php" method="POST" class="my-form" ">
+    <form action="aluno.php" method="POST" class="my-form" ">
         <div class="login-welcome-row">
             <a href="#" title="logo">
-                <img src="timao.svg" alt="NexusGate" class="logo">
+                <img src="img/timao.svg" alt="NexusGate" class="logo">
              </a>
             <h1>Bem-Vindo &#128075;</h1>
             <p>Por favor, insira seus dados!</p>
         </div>
 
         <div class="input_wrapper">
-            <img src="gdf.jpg" alt="arroba" class="input_icon">
-            <input type="text" id="nome" name="nome"
-            class="input_field" placeholder="SeuEmailAqui@Gmail.com" required>
+            <img src="img/gdf.jpg" alt="arroba" class="input_icon">
+            <input type="text" id="nome" name="rm"
+            class="input_field" placeholder="Seu RM aqui" required>
             <label for="email" class="input_label">RM:</label>
         </div>  
 
         <div class="input_wrapper">
-            <img src="cabj.png" alt="arroba" class="input_icon">
-            <input type="text" id="email" name="email"
+            <img src="img/cabj.png" alt="arroba" class="input_icon">
+            <input type="text" id="email" name="nome"
             class="input_field" placeholder="SeuEmailAqui@Gmail.com" required>
             <label for="email" class="input_label">Nome:</label>
         </div>
 
 
         <div class="input_wrapper">
-            <img src="lhp.jpg" alt="cadeado" class="input_icon">
-            <input type="text" id="password" name="senha"
+            <img src="img/lhp.jpg" alt="cadeado" class="input_icon">
+            <input type="text" id="password" name="cpf"
             class="input_field" placeholder="Sua senha aqui" required>
             <label for="password" class="input_label">CPF:</label>
         </div>
 
         <div class="input_wrapper">
-            <img src="1919.jpg" alt="cadeado" class="input_icon">
-            <input type="email" id="password" name="senha"
+            <img src="img/1919.jpg" alt="cadeado" class="input_icon">
+            <input type="email" id="password" name="email"
             class="input_field" placeholder="Sua senha aqui" required>
             <label for="password" class="input_label">Email:</label>
         </div>
@@ -54,7 +66,7 @@
         </button>
         <div class="socials-row">
             <a href="#" title="Use Google">
-                 <img src="sccp.png" alt="Google">
+                 <img src="img/sccp.png" alt="Google">
                 Log-In com o Google
              </a>
         </div>
